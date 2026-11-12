@@ -1,6 +1,6 @@
 # ==============================================================================
 # PROGRAM MENGHITUNG UMUR SESEORANG (SOAL TIPE 2)
-# Bahasa Pemrograman: Python (Tanpa Perhitungan Tahun Kabisat)
+# Bahasa Pemrograman: Python (Tanpa Batasan Max Orang, Tanpa Tahun Kabisat)
 # Ditujukan untuk: Mahasiswa Informatika Semester 1 (Dasar Pemrograman)
 # ==============================================================================
 
@@ -40,7 +40,7 @@ def main():
     umur_hari = []
 
     # 3. Gunakan perulangan untuk melakukan proses input data ke dalam array
-    print("\n--- Input Data Setiap Orang ---")
+    print("\n--- Input Data Setiap Orang ---\n")
     for i in range(jumlah_orang):
         print(f"\nData Orang ke-{i + 1}:")
         input_nama = input("Nama          : ")

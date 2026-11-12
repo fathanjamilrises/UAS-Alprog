@@ -15,7 +15,7 @@ int main() {
         "Juli", "Agustus", "September", "Oktober", "November", "Desember"
     };
 
-    // Batasan maksimal data yang dapat ditampung oleh array
+    // Kapasitas maksimal array untuk menampung data
     const int MAX_ORANG = 100;
 
     // Array untuk menyimpan data input setiap orang
@@ -54,7 +54,8 @@ int main() {
     for (int i = 0; i < jumlahOrang; i++) {
         cout << "\nData Orang ke-" << (i + 1) << ":\n";
         cout << "Nama          : ";
-        getline(cin >> ws, nama[i]); // Membaca string nama lengkap termasuk spasi
+        // getline(cin >> ws, ...) digunakan untuk membaca string nama lengkap termasuk spasi
+        getline(cin >> ws, nama[i]);
         cout << "Tanggal Lahir : ";
         cin >> tglLahir[i];
         cout << "Bulan Lahir   : ";
